@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_vertical">16dp</dimen>
+    <dimen name="margin_horizontal">16dp</dimen>
+    <dimen name="nombre_contacto">30sp</dimen>
+    <dimen name="telefono_contacto">20sp</dimen>
+    <dimen name="margin_top">20dp</dimen>
+    <dimen name="margin_left">10dp</dimen>
+
+</resources>

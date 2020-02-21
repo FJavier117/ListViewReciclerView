@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="@dimen/corner_radius_cv"
+    android:layout_marginTop="@dimen/margin_horizontal"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="@dimen/margin_horizontal">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/imgFotoCv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icons8_contactos_250"/>
+
+        <TextView
+            android:id="@+id/tvNombreCv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pNombre"
+            android:textSize="@dimen/nombre_Cv"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvTelefonoCv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pTelefono"/>
+        <TextView
+            android:id="@+id/tvEmailCv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pEmail"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

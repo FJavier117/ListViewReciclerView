@@ -12,12 +12,14 @@ import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class DetallesContacto extends AppCompatActivity {
     private TextView tvNombre;
     private TextView tvTelefono;
     private TextView tvEmail;
+    private ImageView imgvContacto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,15 +28,19 @@ public class DetallesContacto extends AppCompatActivity {
 
 
         Bundle parametros = getIntent().getExtras();
+        int foto = parametros.getInt(getResources().getString(R.string.pFoto));
         String nombre = parametros.getString(getResources().getString(R.string.pNombre));
         String telefono = parametros.getString(getResources().getString(R.string.pTelefono));
         String email = parametros.getString(getResources().getString(R.string.pEmail));
 
 
+
         tvNombre = findViewById(R.id.tvNombre);
         tvTelefono = findViewById(R.id.tvTelefono);
         tvEmail = findViewById(R.id.tvEmail);
+        imgvContacto = findViewById(R.id.imgvContacto);
 
+        imgvContacto.setImageResource(foto);
         tvNombre.setText(nombre);
         tvTelefono.setText(telefono);
         tvEmail.setText(email);

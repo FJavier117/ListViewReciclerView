@@ -6,5 +6,9 @@
     <dimen name="telefono_contacto">20sp</dimen>
     <dimen name="margin_top">20dp</dimen>
     <dimen name="margin_left">10dp</dimen>
+    <dimen name="corner_radius_cv">5dp</dimen>
+
+    <dimen name="nombre_Cv">20sp</dimen>
+
 
 </resources>

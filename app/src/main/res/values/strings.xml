@@ -7,4 +7,8 @@
     <string name="pNombre">Nombre</string>
     <string name="pTelefono">Telefono</string>
     <string name="pEmail">Email</string>
+    <string name="pFoto">Foto</string>
+
+    <string name="pnombre">nombre</string>
+
 </resources>

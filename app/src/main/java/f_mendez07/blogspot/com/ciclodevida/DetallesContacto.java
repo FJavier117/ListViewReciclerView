@@ -30,6 +30,8 @@ public class DetallesContacto extends AppCompatActivity {
         Toolbar miActionBar = findViewById(R.id.miActionBar);
         setSupportActionBar(miActionBar);
 
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 
 
         Bundle parametros = getIntent().getExtras();

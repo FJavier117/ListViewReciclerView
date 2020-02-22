@@ -2,6 +2,7 @@ package f_mendez07.blogspot.com.ciclodevida;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.Manifest;
 import android.content.Intent;
@@ -25,6 +26,10 @@ public class DetallesContacto extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalles_contacto);
+
+        Toolbar miActionBar = findViewById(R.id.miActionBar);
+        setSupportActionBar(miActionBar);
+
 
 
         Bundle parametros = getIntent().getExtras();

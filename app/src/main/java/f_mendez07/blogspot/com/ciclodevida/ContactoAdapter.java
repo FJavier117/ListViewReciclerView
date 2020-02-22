@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -41,6 +42,7 @@ public class ContactoAdapter extends RecyclerView.Adapter<ContactoAdapter.Contac
         holder.tvTelefonoCv.setText(contacto.getTelefono());
         holder.tvEmailCv.setText(contacto.getEmail());
 
+
         holder.imgFotoCv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,6 +53,13 @@ public class ContactoAdapter extends RecyclerView.Adapter<ContactoAdapter.Contac
                 intent.putExtra(activity.getResources().getString(R.string.pTelefono),contacto.getTelefono());
                 intent.putExtra(activity.getResources().getString(R.string.pEmail),contacto.getEmail());
                 activity.startActivity(intent);
+            }
+        });
+
+        holder.imgbLike.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(activity,"Diste like"+contacto.getNombre(),Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -70,6 +79,7 @@ public class ContactoAdapter extends RecyclerView.Adapter<ContactoAdapter.Contac
         private TextView tvNombreCv;
         private TextView tvTelefonoCv;
         private TextView tvEmailCv;
+        private ImageButton imgbLike;
 
         public ContactoViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -78,6 +88,7 @@ public class ContactoAdapter extends RecyclerView.Adapter<ContactoAdapter.Contac
             tvNombreCv   = itemView.findViewById(R.id.tvNombreCv);
             tvTelefonoCv = itemView.findViewById(R.id.tvTelefonoCv);
             tvEmailCv    = itemView.findViewById(R.id.tvEmailCv);
+            imgbLike     = itemView.findViewById(R.id.imgbLike);
         }
 
 

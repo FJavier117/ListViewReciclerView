@@ -18,27 +18,48 @@
         <ImageView
             android:id="@+id/imgFotoCv"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="100dp"
             android:src="@drawable/icons8_contactos_250"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tvNombreCv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pNombre"
-            android:textSize="@dimen/nombre_Cv"
-            android:textStyle="bold"/>
+            <ImageButton
+                android:id="@+id/imgbLike"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/like"/>
 
-        <TextView
-            android:id="@+id/tvTelefonoCv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pTelefono"/>
-        <TextView
-            android:id="@+id/tvEmailCv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/pEmail"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvNombreCv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pNombre"
+                    android:textSize="@dimen/nombre_Cv"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvTelefonoCv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pTelefono"/>
+                <TextView
+                    android:id="@+id/tvEmailCv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pEmail"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>

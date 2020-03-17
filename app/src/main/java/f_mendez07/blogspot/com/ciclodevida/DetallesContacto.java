@@ -27,10 +27,10 @@ public class DetallesContacto extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalles_contacto);
 
-        Toolbar miActionBar = findViewById(R.id.miActionBar);
-        setSupportActionBar(miActionBar);
+       // Toolbar miActionBar = findViewById(R.id.miActionBar);
+       // setSupportActionBar(miActionBar);
 
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 
 

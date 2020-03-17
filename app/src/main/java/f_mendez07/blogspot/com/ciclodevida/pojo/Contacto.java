@@ -1,21 +1,33 @@
-package f_mendez07.blogspot.com.ciclodevida;
-
-import java.util.ArrayList;
+package f_mendez07.blogspot.com.ciclodevida.pojo;
 
 public class Contacto {
+    private int id;
     private String nombre;
     private String telefono;
     private String email;
     private int foto;
+    private int likes;
 
 
-    public Contacto(int foto,String nombre, String telefono, String email) {
+    public Contacto(int foto, String nombre, String telefono, String email, int likes) {
         this.foto = foto;
         this.nombre = nombre;
         this.telefono = telefono;
         this.email = email;
+        this.likes = likes;
     }
 
+    public Contacto() {
+
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     public String getNombre() {
         return nombre;
     }
@@ -46,5 +58,13 @@ public class Contacto {
 
     public void setFoto(int foto) {
         this.foto = foto;
+    }
+
+    public int getLikes() {
+        return likes;
+    }
+
+    public void setLikes(int likes) {
+        this.likes = likes;
     }
 }

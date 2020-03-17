@@ -6,10 +6,6 @@
     tools:context=".DetallesContacto"
     android:orientation="vertical">
 
-    <include android:id="@+id/miActionBar"
-        layout="@layout/actionbar">
-    </include>
-
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"

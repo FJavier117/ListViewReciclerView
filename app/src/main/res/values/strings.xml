@@ -8,7 +8,24 @@
     <string name="pTelefono">Telefono</string>
     <string name="pEmail">Email</string>
     <string name="pFoto">Foto</string>
-
     <string name="pnombre">nombre</string>
+    <string name="plike">0 likes</string>
+    <string name="like">likes</string>
+    <string name="about">ABOUT</string>
+
+    <!--string menu opciones-->
+    <string name="menu_about_op">Acerca de</string>
+    <string name="menu_settings_op">Configuración</string>
+
+    <!--string menu contextual-->
+    <string name="menu_delet_contex">Eliminar</string>
+    <string name="menu_detail_contex">Detalles</string>
+
+    <!--string menu pop up-->
+    <string name="menu_delet_pop">Eliminar</string>
+    <string name="menu_detail_pop">Detalles</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

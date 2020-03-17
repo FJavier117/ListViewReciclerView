@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mContextEliminar"
+        android:title="@string/menu_delet_contex"
+        android:orderInCategory="1001"
+        >
+
+    </item>
+    <item
+        android:id="@+id/mContextEditar"
+        android:title="@string/menu_detail_contex"
+        android:orderInCategory="100">
+
+    </item>
+
+</menu>

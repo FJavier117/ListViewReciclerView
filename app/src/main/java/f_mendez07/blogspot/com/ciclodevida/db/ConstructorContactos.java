@@ -14,6 +14,7 @@ public class ConstructorContactos {
 
     private Context context;
     public ConstructorContactos(Context context) {
+
         this.context = context;
     }
 

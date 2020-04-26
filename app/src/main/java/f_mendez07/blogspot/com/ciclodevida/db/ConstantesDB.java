@@ -14,6 +14,7 @@ public final class ConstantesDB {
 
     public static final String TABLE_LIKES_CONTACS = "contacto_likes";
     public static final String TABLE_LIKES_CONTACS_ID = "id";
+
     public static final String TABLE_LIKES_CONTACS_ID_CONTACTO ="id_contacto";
     public static final String TABLE_LIKES_CONTACS_NUMERO_LIKES = "numero_likes";
 }

@@ -35,6 +35,7 @@ public class BaseDatos extends SQLiteOpenHelper {
                 ConstantesDB.TABLE_LIKES_CONTACS_ID_CONTACTO + " INTEGER,  "+
                 ConstantesDB.TABLE_LIKES_CONTACS_NUMERO_LIKES + " INTEGER, " +
                 "FOREIGN KEY (" + ConstantesDB.TABLE_LIKES_CONTACS_ID_CONTACTO + ") " +
+                //REFERENCES recibe el nombre de la tabla y el de la columna
                 "REFERENCES " + ConstantesDB.TABLE_CONTACS + "(" + ConstantesDB.TABLE_CONTACS_ID + ")" +
                 ")";
 
